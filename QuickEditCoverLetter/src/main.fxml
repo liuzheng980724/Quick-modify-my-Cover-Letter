@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="350.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mainController">
+   <center>
+      <BorderPane prefHeight="1080.0" prefWidth="1920.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <Button fx:id="startMondify" mnemonicParsing="false" onAction="#startMondify" prefHeight="0.0" prefWidth="55.0" text="Start" BorderPane.alignment="CENTER" />
+         </bottom>
+         <BorderPane.margin>
+            <Insets bottom="20.0" />
+         </BorderPane.margin>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="companyName" layoutX="10.0" layoutY="80.0" prefHeight="25.0" prefWidth="430.0" text="Company Name" />
+                  <TextField fx:id="managerName" layoutX="10.0" layoutY="160.0" prefHeight="25.0" prefWidth="430.0" text="Manager Name" />
+                  <TextField fx:id="platformName" layoutX="10.0" layoutY="240.0" prefHeight="25.0" prefWidth="430.0" text="Platform Name" />
+                  <TextField fx:id="jobPosition" layoutX="10.0" layoutY="200.0" prefHeight="25.0" prefWidth="430.0" text="Job Position" />
+                  <TextField fx:id="companyAddress" layoutX="10.0" layoutY="120.0" prefHeight="25.0" prefWidth="430.0" text="Company Address" />
+                  <Text fx:id="inputFileAddress" layoutX="10.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From" wrappingWidth="430.0" />
+                  <Text fx:id="outputFileAddress" layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" wrappingWidth="430.0" />
+                  <Text fx:id="dateShow" layoutX="10.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="430.0" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>
